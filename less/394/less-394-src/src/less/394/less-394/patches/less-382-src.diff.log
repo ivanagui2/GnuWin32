@@ -1,0 +1,36 @@
+Hmm...  Looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|diff -ipuwr --binary --strip-trailing-cr -x '*.bak' -x '*.orig' -x '*.rej' -x '*.new' -x '*~' -x debian -x '*.po' -x '*.pot' less-382-orig/Makefile.in less-382-src/Makefile.in
+|--- less-382-orig/Makefile.in	2004-02-04 05:52:26.000000000 +0100
+|+++ less-382-src/Makefile.in	2005-03-30 20:26:17.000000000 +0200
+--------------------------
+Patching file Makefile.in using Plan A...
+Hunk #1 succeeded at 3.
+Hunk #2 FAILED at 43.
+Hunk #3 succeeded at 117 (offset 1 line).
+Not setting time of file Makefile.in (time mismatch)
+1 out of 3 hunks FAILED -- saving rejects to file Makefile.in.rej
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|diff -ipuwr --binary --strip-trailing-cr -x '*.bak' -x '*.orig' -x '*.rej' -x '*.new' -x '*~' -x debian -x '*.po' -x '*.pot' less-382-orig/decode.c less-382-src/decode.c
+|--- less-382-orig/decode.c	2004-02-04 05:52:27.000000000 +0100
+|+++ less-382-src/decode.c	2005-03-30 19:54:36.000000000 +0200
+--------------------------
+Patching file decode.c using Plan A...
+Hunk #1 FAILED at 34.
+Hunk #2 succeeded at 726.
+Not setting time of file decode.c (time mismatch)
+1 out of 2 hunks FAILED -- saving rejects to file decode.c.rej
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|diff -ipuwr --binary --strip-trailing-cr -x '*.bak' -x '*.orig' -x '*.rej' -x '*.new' -x '*~' -x debian -x '*.po' -x '*.pot' less-382-orig/defines.h.in less-382-src/defines.h.in
+|--- less-382-orig/defines.h.in	2004-02-04 05:53:15.000000000 +0100
+|+++ less-382-src/defines.h.in	2005-03-11 23:04:56.000000000 +0100
+--------------------------
+Patching file defines.h.in using Plan A...
+Hunk #1 succeeded at 120 (offset 4 lines).
+Not setting time of file defines.h.in (time mismatch)
+done

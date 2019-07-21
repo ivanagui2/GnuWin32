@@ -1,0 +1,32 @@
+export DEFSPLUS= -DWIN32 -D_MSC_VER=1 -DMSDOS_COMPILER=WIN32C 
+export INCLUDESPLUS=
+export CFLAGSPLUS=
+export LDFLAGSPLUS=
+export LIBSPLUS=
+export DLLFLAG=
+sedfiles=Makefile libtool config.h defines.h
+#BUILDDIR=$(shell pwd.sh | sed -e "s/\(-.*\)-[^-]*$$/\1/")
+BUILDDIR=$(shell pwd.sh)
+SRCDIR=../$(shell basename $(BUILDDIR)-src)
+
+export ac_cv_func_sigprocmask=no
+export ac_cv_func_sigsetmask=no
+export ac_cv_header_termios_h=no
+export ac_cv_header_termio_h=no
+
+.PHONY: all 
+all: CONF MFSED
+CONF:
+#	if [ ! -e Makefile.in.sed ]; then \
+#		cp -fp k:/Makefile.in.sed .; \
+#	fi
+#	find.exe $(SRCDIR) -iname Makefile.in -exec sed -i -f Makefile.in.sed '{}' ';'
+	$(SRCDIR)/configure --prefix=c:/progra~1/Less --srcdir="$(SRCDIR)" \
+		--with-regex=pcre --with-editor=ed.exe
+	
+-include $(DVLDIR)/makefile.chg
+
+#	make all
+#	make check
+#	make install prefix=c:/temp/sed
+                                 

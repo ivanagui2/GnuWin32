@@ -1,0 +1,6 @@
+/HAVE_TERMCAP_H 1/s,^,/* ,
+/HAVE_TERMCAP_H 1/s,$, */,
+/HAVE_TERMIOS_FUNCS 1/s,^,/* ,
+/HAVE_TERMIOS_FUNCS 1/s,$, */,
+/DEF_METACHARS/s,\\\\,,g
+/DEF_METAESCAPE/s,\\\\,,g
